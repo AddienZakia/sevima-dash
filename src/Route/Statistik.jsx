@@ -25,7 +25,7 @@ function Admin() {
     </div>
   );
 }
-//|| item.matematika || item.biologi || item.kimia ||
+
 function TableData({ data, tulisan }) {
   return (
     <div className="px-7 py-5 inline-block">
