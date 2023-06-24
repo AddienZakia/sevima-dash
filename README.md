@@ -12,4 +12,4 @@ Dashboard interaktif yang berguna untuk mengelola dan menganalisis nilai siswa s
   - MongoDB
   - Express / Node js
 
-[Backend](https://github.com/AddienZakia/backend-side)
+Backend Side [Github](https://github.com/AddienZakia/backend-side)
