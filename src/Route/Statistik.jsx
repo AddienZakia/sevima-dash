@@ -78,10 +78,14 @@ function GetData() {
           switch (data) {
             case data.matematika:
               jumlahNilai[0][1] += data.matematika;
+              break;
             case data.kimia:
               jumlahNilai[1][1] += data.kimia;
+              break;
             case data.biologi:
               jumlahNilai[2][1] += data.biologi;
+              break;
+            default:
           }
           if (data.matematika) jumlahNilai[0][1] += data.matematika;
           if (data.kimia) jumlahNilai[1][1] += data.kimia;

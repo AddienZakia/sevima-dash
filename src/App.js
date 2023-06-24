@@ -10,6 +10,7 @@ import Root from "./Route/Root";
 import Statistik from "./Route/Statistik";
 import Anggota from "./Route/Anggota";
 import Konfigurasi from "./Route/Konfigurasi";
+import Laporan from "./Route/Laporan";
 
 let router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ let router = createBrowserRouter(
       <Route path="" element={<Statistik />} />
       <Route path="Anggota" element={<Anggota />} />
       <Route path="Tambah" element={<Konfigurasi />} />
+      <Route path="Anggota/:id" element={<Laporan />} />
     </Route>
   )
 );

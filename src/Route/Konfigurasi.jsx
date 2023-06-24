@@ -11,9 +11,9 @@ function Konfigurasi() {
 
 function TambahData() {
   const [nama, setNama] = useState("");
-  const [mtk, setMtk] = useState("");
-  const [kimia, setKimia] = useState("");
-  const [biologi, setBiologi] = useState("");
+  const [mtk, setMtk] = useState(0);
+  const [kimia, setKimia] = useState(0);
+  const [biologi, setBiologi] = useState(0);
   const [result, setResult] = useState("hidden");
   const [tulisan, setTulisan] = useState("");
 
