@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 
 function Anggota() {
@@ -30,7 +31,9 @@ function Anggota() {
       <tbody>
         {data.map((item, index) => (
           <tr key={index} className="border">
-            <td className="table-rowss">{item.nama}</td>
+            <NavLink to={"/anggota/" + item.nama}>
+              <td className="py-2 px-4">{item.nama}</td>
+            </NavLink>
             <td className="table-rowss">{item.biologi}</td>
             <td className="table-rowss">{item.kimia}</td>
             <td className="table-rowss">{item.matematika}</td>

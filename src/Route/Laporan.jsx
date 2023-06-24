@@ -30,7 +30,6 @@ function Laporan() {
 
 function SetTemplate({ data }) {
   let error = "Tidak ditemukan";
-  console.log(data);
   let fungsi = Catatan({ data });
 
   return (
@@ -115,18 +114,21 @@ function Catatan(data) {
     hasil.saran = saran.bawah[random];
   }
 
-  let detect = {
-    [p1]: "matematika",
-    [p2]: "kimia",
-    [p3]: "biologi",
-  };
-  console.log(p1, p2, p3, detect);
-  hasil.saran += "\n";
-  let minimal = Math.min(p1, p2, p3);
-  let link_video = link[detect[minimal]][random];
+  //   let detect = {
+  //     [p1]: "matematika",
+  //     [p2]: "kimia",
+  //     [p3]: "biologi",
+  //   };
+  //   console.log(p1, p2, p3, detect);
+  //   hasil.saran += "\n";
+  //   let minimal = Math.min(p1, p2, p3);
+  let mapel = ["matematika", "kimia", "biologi"];
+  let mapelRandom = mapel[Math.floor(Math.random() * mapel.length)];
+  let link_video = link[mapelRandom][random];
 
   hasil.saran +=
-    "Materi link video yang bagus untuk meningkatkan nilai kamu\n" + link_video;
+    " Materi link video yang bagus untuk meningkatkan nilai kamu\n" +
+    link_video;
 
   return hasil;
 }
