@@ -23,9 +23,9 @@ function TambahData() {
     try {
       const data = {
         nama: nama,
-        matematika: mtk,
-        kimia: kimia,
-        biologi: biologi,
+        matematika: parseInt(mtk),
+        kimia: parseInt(kimia),
+        biologi: parseInt(biologi),
       };
 
       const url = "http://localhost:5500/kelas";

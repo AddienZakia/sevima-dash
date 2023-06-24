@@ -12,4 +12,8 @@
   header ul li a {
     @apply hover:text-abu transition duration-200 text-2xl md:text-lg;
   }
+
+  .table-rowss {
+    @apply border py-2 px-4;
+  }
 }

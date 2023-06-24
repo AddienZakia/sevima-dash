@@ -18,8 +18,6 @@ let router = createBrowserRouter(
       <Route path="" element={<Statistik />} />
       <Route path="Anggota" element={<Anggota />} />
       <Route path="Konfigurasi" element={<Konfigurasi />} />
-
-      {/* <Route path="admin" element={<Admin />} /> */}
     </Route>
   )
 );
