@@ -17,7 +17,7 @@ function Header() {
           <a href="#">Anggota</a>
         </li>
         <li>
-          <a href="#">Konfigurasi</a>
+          <a href="#">Tambah</a>
         </li>
         <li className="block md:hidden">
           <a href="#">Sign In</a>
