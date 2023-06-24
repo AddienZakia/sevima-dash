@@ -91,9 +91,9 @@ function GetData() {
 
         // Rata-Rata Nilai Pelajaran Tertinggi
         let rataNilai = {
-          matematika: (jumlahNilai[0][1] / fetchedData.length).toFixed(2),
-          kimia: (jumlahNilai[1][1] / fetchedData.length).toFixed(2),
-          biologi: (jumlahNilai[2][1] / fetchedData.length).toFixed(2),
+          Matematika: (jumlahNilai[0][1] / fetchedData.length).toFixed(2),
+          Kimia: (jumlahNilai[1][1] / fetchedData.length).toFixed(2),
+          Biologi: (jumlahNilai[2][1] / fetchedData.length).toFixed(2),
         };
         const sortedRataNilai = Object.entries(rataNilai).sort(
           (a, b) => b[1] - a[1]
