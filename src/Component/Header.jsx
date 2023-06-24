@@ -5,12 +5,15 @@ function Header() {
   let [state, setstate] = useState("block");
 
   function Klik() {
+    if (window.innerWidth >= 768) return;
     document.getElementById("ul").classList.toggle("hidden");
   }
 
   return (
     <header className="flex justify-between items-center my-5 border-b-2 pb-5 border-abu">
-      <h1 className="text-2xl font-bold">Dashboard</h1>
+      <NavLink to={"/"}>
+        <h1 className="text-2xl font-bold">Dashboard</h1>
+      </NavLink>
       <ul
         id="ul"
         className={
@@ -19,13 +22,19 @@ function Header() {
         }
       >
         <li>
-          <NavLink to={"/"}>Statistik</NavLink>
+          <NavLink to={"/"} onClick={Klik}>
+            Statistik
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"/Anggota"}>Anggota</NavLink>
+          <NavLink to={"/Anggota"} onClick={Klik}>
+            Anggota
+          </NavLink>
         </li>
         <li>
-          <NavLink to={"/tambah"}>Tambah</NavLink>
+          <NavLink to={"/tambah"} onClick={Klik}>
+            Tambah
+          </NavLink>
         </li>
       </ul>
 
