@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+
+import "./Styles/output.css";
+import Root from "./Route/Root";
+import Statistik from "./Route/Statistik";
+import Anggota from "./Route/Anggota";
+// import Admin from "./Route/Statistik";
+
+let router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route path="" element={<Statistik />} />
+      <Route path="Anggota" element={<Anggota />} />
+      {/* <Route path="admin" element={<Admin />} /> */}
+    </Route>
+  )
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

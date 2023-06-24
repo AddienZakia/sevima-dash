@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-dark;
+  }
+}
+
+@layer components {
+  header ul li a {
+    @apply hover:text-abu transition duration-200 text-2xl md:text-lg;
+  }
+}
